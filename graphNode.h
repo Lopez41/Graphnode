@@ -9,4 +9,20 @@
 #ifndef GRAPH_NODE_H
 #define GRAPH_NODE_H
 
+#include <vector>
+
+class GraphNode 
+{
+
+public:
+    GraphNode(int,int); // Constructor
+    int getId() const;
+    int getData() const;
+    void setData(int);
+    void addNeighbor(GraphNode*);
+    const std::vector<GraphNode*>& getNeighbors() const;
+private:
+    
+};
+
 #endif // GRAPH_NODE_H
