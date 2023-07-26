@@ -22,7 +22,9 @@ public:
     void addNeighbor(GraphNode*);
     const std::vector<GraphNode*>& getNeighbors() const;
 private:
-    
+    int id;
+    int data;
+    std::vector<GraphNode*> neighbors;
 };
 
 #endif // GRAPH_NODE_H
