@@ -19,3 +19,12 @@ int GraphNode::getId() const
     return id;
 }
 
+int GraphNode::getData() const 
+{
+    return data;
+}
+
+void GraphNode::setData(int data) 
+{
+    this->data = data;
+}
