@@ -28,3 +28,13 @@ void GraphNode::setData(int data)
 {
     this->data = data;
 }
+
+void GraphNode::addNeighbor(GraphNode* neighbor) 
+{
+    neighbors.push_back(neighbor);
+}
+
+const std::vector<GraphNode*>& GraphNode::getNeighbors() const 
+{
+    return neighbors;
+}
