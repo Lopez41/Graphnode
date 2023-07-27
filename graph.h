@@ -9,8 +9,17 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
+#include <vector>
 #include "graphNode.h"
 
+class Graph
+{
 
+public:
+    Graph(); // Constructor
+    ~Graph(); // Destructor
+    GraphNode* addNode(int, int);// add new Node
+   
+};
 
 #endif // GRAPH_H
