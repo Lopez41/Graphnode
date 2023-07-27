@@ -19,7 +19,9 @@ public:
     Graph(); // Constructor
     ~Graph(); // Destructor
     GraphNode* addNode(int, int);// add new Node
-   
+    void addEdge(GraphNode*, GraphNode*);//adds undirected edge between two nodes
+    bool areConnected(const GraphNode*, const GraphNode*) const;//check if two nodes in the graph are connected
+    const std::vector<GraphNode*>& getNodes() const; //Returns a constant reference to the vector of nodes in the graph.
 };
 
 #endif // GRAPH_H
