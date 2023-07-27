@@ -7,3 +7,15 @@
 *File: graphNode.cpp
 *******************/
 #include "graphNode.h"
+
+GraphNode::GraphNode(int id, int data) 
+{
+    this->id = id;
+    this->data = data;
+}
+
+int GraphNode::getId() const 
+{
+    return id;
+}
+
