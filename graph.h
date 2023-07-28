@@ -24,7 +24,7 @@ public:
     const std::vector<GraphNode*>& getNodes() const; //Returns a constant reference to the vector of nodes in the graph.
 
 private:
-    std::vector<GraphNode*> nodes;
+    std::vector<GraphNode*> nodes;// Vector to store pointers to the graph nodes.
 };
 
 #endif // GRAPH_H
