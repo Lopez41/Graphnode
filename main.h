@@ -9,5 +9,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <iostream>
+#include "graph.h"
+#include "main.h"
+
 
 #endif // MAIN_H

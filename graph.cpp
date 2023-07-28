@@ -7,3 +7,14 @@
 *File: graph.cpp
 *******************/
 #include "graph.h"
+
+Graph::Graph() {}
+
+Graph::~Graph() 
+{
+    for (GraphNode* node : nodes) 
+    {
+        delete node;
+    }
+}
+
