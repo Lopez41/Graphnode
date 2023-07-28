@@ -12,6 +12,7 @@
 #include <iostream>
 #include "graph.h"
 #include "main.h"
-
+using std::cout;
+using std::endl;
 
 #endif // MAIN_H
