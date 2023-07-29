@@ -44,3 +44,8 @@ bool Graph::areConnected(const GraphNode* node1, const GraphNode* node2) const
     }
     return connected;
 }
+
+const std::vector<GraphNode*>& Graph::getNodes() const 
+{
+    return nodes;
+}
