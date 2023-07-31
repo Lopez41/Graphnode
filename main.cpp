@@ -41,14 +41,24 @@ int main()
             }
         }
     }
-
-    // Accessing node data using a while loop
+    // Accessing node data
     cout << "Data of all nodes:" << endl;
     for (const GraphNode* node : nodes)
     {
         cout << "Data of Node " << node->getId() << ": " << node->getData() << endl;
     }
-
+    
+    // Printing all nodes and their neighbors
+    for (const GraphNode* node : nodes)
+    {
+        cout << "Node " << node->getId() << " Neighbors: ";
+        const std::vector<GraphNode*>& neighbors = node->getNeighbors();
+        for (const GraphNode* neighbor : neighbors)
+        {
+            cout << neighbor->getId() << " ";
+        }
+        cout <<endl;
+    }
 
     return 0;
 }
