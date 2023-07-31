@@ -42,6 +42,13 @@ int main()
         }
     }
 
+    // Accessing node data using a while loop
+    cout << "Data of all nodes:" << endl;
+    for (const GraphNode* node : nodes)
+    {
+        cout << "Data of Node " << node->getId() << ": " << node->getData() << endl;
+    }
+
 
     return 0;
 }
