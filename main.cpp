@@ -27,6 +27,20 @@ int main()
     graph.addEdge(node3, node4);
     graph.addEdge(node4, node5);
     
+      
+    // Testing connectivity for all nodes in a loop
+    const std::vector<GraphNode*>& nodes = graph.getNodes();
+    for (const GraphNode* node1 : nodes)
+    {
+        for (const GraphNode* node2 : nodes)
+        {
+            if (node1 != node2)
+            {
+                cout << "Node " << node1->getId() << " and Node " << node2->getId() << " are connected: "
+                          << (graph.areConnected(node1, node2) ? "Yes" : "No") << endl;
+            }
+        }
+    }
 
 
     return 0;
